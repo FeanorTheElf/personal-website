@@ -1,8 +1,8 @@
-import CVEntry from "@/components.tsx/cventry";
-import ListTable from "@/components.tsx/listtable";
-import MainCol from "@/components.tsx/maincol";
-import Navbar from "@/components.tsx/navbar";
-import Publication from "@/components.tsx/publication";
+import CVEntry from "@/components/cventry";
+import ListTable from "@/components/listtable";
+import MainCol from "@/components/maincol";
+import Navbar from "@/components/navbar";
+import Publication from "@/components/publication";
 import Head from "next/head";
 export default function Home() {
   return (
@@ -16,16 +16,16 @@ export default function Home() {
         
         <ListTable>
           <tr>
-            <th scope="row" className="row-header-responsive">Email</th>
-            <td>Simon.Pohmann.2022@live.rhul.ac.uk</td>
+            <th scope="row" className="table-list-header">Email</th>
+            <td className="table-list-content">Simon.Pohmann.2022@live.rhul.ac.uk</td>
           </tr>
           <tr>
-            <th scope="row" className="row-header-responsive">Research Interests</th>
-            <td>Cryptography, Computational Mathematics</td>
+            <th scope="row" className="table-list-header">Research Interests</th>
+            <td className="table-list-content">Cryptography, Computational Mathematics</td>
           </tr>
           <tr>
-            <th scope="row" className="row-header-responsive">Current Affiliation</th>
-            <td>Royal Holloway, University of London</td>
+            <th scope="row" className="table-list-header">Current Affiliation</th>
+            <td className="table-list-content">Royal Holloway, University of London</td>
           </tr>
         </ListTable>
 

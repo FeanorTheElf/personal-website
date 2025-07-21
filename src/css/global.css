@@ -6,9 +6,19 @@
     margin: -60px 0 0;
 }
 
+.table-list-content {
+    max-width: 0 !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table-list-header {
+    width: 0 !important;
+}
+
 @media (min-width: 576px) {
 
-    .row-header-responsive {
+    .table-list-header {
         min-width: fit-content !important;
         white-space: nowrap !important;
         width: 0 !important;

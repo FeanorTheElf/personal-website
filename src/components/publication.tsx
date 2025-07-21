@@ -59,13 +59,13 @@ export default function Publication(props: PublicationProps) {
     }
     if (props.link === undefined) {
         return (<tr>
-            <td className="row-header-responsive"><b>{props.shorthand}</b></td>
-            <td>{props.children}</td>
+            <td className="table-list-header"><b>{props.shorthand}</b></td>
+            <td className="table-list-content">{props.children}</td>
         </tr>);
     } else {
         return (<tr>
-            <td className="row-header-responsive"><b>{props.shorthand}</b><br/><a href={props.link}>{publicationDescription(props.link, props.linkdesc)}</a></td>
-            <td>{props.children}</td>
+            <td className="table-list-header"><b>{props.shorthand}</b><br/><a href={props.link}>{publicationDescription(props.link, props.linkdesc)}</a></td>
+            <td className="table-list-content">{props.children}</td>
         </tr>);
     }
 }

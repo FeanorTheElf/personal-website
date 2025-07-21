@@ -21,13 +21,13 @@ export default function CVEntry(props: CVEntryProps) {
     }
     if (props.detailedDate != undefined) {
         return (<tr>
-            <td className="row-header-responsive">{dateMain}<br/><i>{props.detailedDate}</i></td>
-            <td>{props.children}</td>
+            <td className="table-list-header">{dateMain}<br/><i>{props.detailedDate}</i></td>
+            <td className="table-list-content">{props.children}</td>
         </tr>);
     } else {
         return (<tr>
-            <td className="row-header-responsive">{dateMain}</td>
-            <td>{props.children}</td>
+            <td className="table-list-header">{dateMain}</td>
+            <td className="table-list-content">{props.children}</td>
         </tr>);
     }
 }
