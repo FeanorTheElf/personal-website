@@ -21,7 +21,7 @@
     .table-list-header {
         min-width: fit-content !important;
         white-space: nowrap !important;
-        width: 0 !important;
+        width: 1px !important;
     }
 
     .w-sm-50 {
