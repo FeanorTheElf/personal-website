@@ -1,7 +1,0 @@
-include:
-  - _next
-  - _next/static/_LOCylIVKNrRPvTGKfLIZ
-  - _next/static/_LOCylIVKNrRPvTGKfLIZ/_buildManifest.js
-  - _next/static/_LOCylIVKNrRPvTGKfLIZ/ssgManifest.js
-  - _next/static/chunks/pages/_app-fc42de40e8b2cce3.js
-  - _next/static/chunks/pages/_error-7ddc2730f944d98a.js
