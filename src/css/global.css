@@ -7,13 +7,13 @@
 }
 
 .table-list-content {
-    max-width: 0 !important;
+    max-width: 1px !important;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .table-list-header {
-    width: 0 !important;
+    width: 1px !important;
 }
 
 @media (min-width: 576px) {
