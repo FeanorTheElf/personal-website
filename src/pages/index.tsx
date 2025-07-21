@@ -8,11 +8,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Simon Pohmann</title>
       </Head>
       <Navbar/>
       <MainCol>
-        <a id="top"/><h3>Simon Pohmann</h3>
+        <h3 id="top">Simon Pohmann</h3>
         
         <ListTable>
           <tr>
@@ -44,8 +44,8 @@ export default function Home() {
           </div>
         </div>
 
-        <a id="publications"/><h3 className="pt-4">Publications</h3>
-
+        <h3 id="publications">Publications</h3>
+        <i>Authors are ordered alphabetically.</i>
         <ListTable>
           <Publication shorthand="OPP25" link="https://ia.cr/2025/864">
             H. Okada, R. Player, and S. Pohmann. “Fheanor: a new, modular FHE library for designing and optimising schemes”. In: Cryptology ePrint Archive (2025).
@@ -66,9 +66,8 @@ export default function Home() {
             S. Pohmann, M. Stevens, and J. Zumbrägel. “Lattice enumeration on gpus for fplll”. In: Cryptology ePrint Archive (2021).
           </Publication>
         </ListTable>
-        <i>Authors are ordered alphabetically.</i>
 
-        <a id="talks"/><h3 className="pt-4">Talks and Posters</h3>
+        <h3 id="talks">Talks and Posters</h3>
 
         <ListTable>
           <Publication shorthand="25/03/2025">
@@ -82,7 +81,7 @@ export default function Home() {
           </Publication>
         </ListTable>
 
-        <a id="experience"/><h3 className="pt-2">Experience and Education</h3>
+        <h3 id="experience">Experience and Education</h3>
 
         <ListTable>
           <CVEntry from={2022} to="now">
