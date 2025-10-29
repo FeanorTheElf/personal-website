@@ -3,7 +3,13 @@ import { PropsWithChildren, PureComponent } from "react";
 function publicationDescription(link: string, linkdesc: string | undefined): string {
     if (linkdesc === undefined) {
         if (link.startsWith("https://")) {
-            return link.substring(8);
+            link = link.substring(8);
+        }
+        if (link.startsWith("www.")) {
+            link = link.substring(4);
+        }
+        if (link.length >= 16) {
+            return "on " + link.substring(0, link.indexOf("/"));
         } else {
             return link;
         }

@@ -70,14 +70,20 @@ export default function Home() {
         <h3 id="talks">Talks and Posters</h3>
 
         <ListTable>
-          <Publication shorthand="25/03/2025">
-          On algebraic homomorphic encryption and its applications to doubly-efficient PIR”. Poster Presentation at FHE.org 2025.
+          <Publication shorthand="12/08/2025" link="https://youtu.be/W7V042x0IC0?si=lHxTP2kLaf38dGx3">
+            “An introduction to the FHE library Fheanor”. COSIC Seminar at KU Leuven.
           </Publication>
-          <Publication shorthand="06/03/2024">
+          <Publication shorthand="25/03/2025" link="https://github.com/user-attachments/files/19668501/poster-1.pdf">
+            “On algebraic homomorphic encryption and its applications to doubly-efficient PIR”. Poster Presentation at FHE.org 2025.
+          </Publication>
+          <Publication shorthand="06/03/2024" link="https://youtu.be/g6IoMCFNx6U?si=Q56NnrkFrbThBD0D">
             “Towards practical doubly-efficient private information retrieval”. Conference Presentation at Financial Cryptography 2024.
           </Publication>
           <Publication shorthand="06/12/2023">
             “Homomorphic polynomial evaluation using Galois structure and applications to BFV bootstrapping”. Conference Presentation at ASIACRYPT 2023.
+          </Publication>
+          <Publication shorthand="05/10/2023" link="https://fhe.org/meetups/036-Homomorphic_Polynomial_Evaluation_using_Galois_structure_and_application_to_BFV_bootstrapping.html">
+            “Homomorphic polynomial evaluation using Galois structure and applications to BFV bootstrapping”. FHE.org meetup.
           </Publication>
         </ListTable>
 
