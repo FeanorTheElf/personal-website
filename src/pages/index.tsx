@@ -67,6 +67,29 @@ export default function Home() {
           </Publication>
         </ListTable>
 
+        <h3 id="experience">Education</h3>
+
+        <ListTable>
+          <CVEntry from={2022} to="now">
+            PhD in the Information Security Group at Royal Holloway, University of London. Supervised by <a href="https://rachelplayer.github.io/">Dr Rachel Player</a>.
+          </CVEntry>
+          <CVEntry from={2021} to={2022}>
+            M.Sc. in Mathematics and Foundations of Computer Science at Oxford University, UK. Final Grade: Distinction.
+          </CVEntry>
+          <CVEntry from={2020} to={2021}>
+            M.Sc. in Computational Mathematics at University of Passau, Germany. Discontinued because of above offer from Oxford; Preliminary Grade 1.0.
+          </CVEntry>
+          <CVEntry from={2018} to={2020}>
+            B.Sc. in Mathematics at University of Passau, Germany. Final Grade: 1.0.
+          </CVEntry>
+          <CVEntry from={2017} to={2020}>
+            B.Sc. in Computer Science at University of Passau, Germany. Final Grade: 1.0.
+          </CVEntry>
+          <CVEntry from={2017} to={2019}>
+            Working student at msg systems, Passau, Germany.
+          </CVEntry>
+        </ListTable>
+
         <h3 id="talks">Talks and Posters</h3>
 
         <ListTable>
@@ -87,29 +110,17 @@ export default function Home() {
           </Publication>
         </ListTable>
 
-        <h3 id="experience">Experience and Education</h3>
+        <h3 id="experience">Other Research Experience</h3>
 
         <ListTable>
-          <CVEntry from={2022} to="now">
-            PhD in the Information Security Group at Royal Holloway, University of London. Supervised by <a href="https://rachelplayer.github.io/">Dr Rachel Player</a>.
+          <CVEntry from={2025} detailedDate="28/07 - 01/08">
+            Research visit to the COSIC group at KU Leuven. The primary contact was Frederik Vercauteren.
           </CVEntry>
           <CVEntry from={2025} detailedDate="01/04 - 28/06">
-            Internship at KDDI Research, Tokyo.
+            Invited Researcher hosted by KDDI Research, supported by the International Exchange Program of the National Institute of Information and Communications (NICT). The primary contact was Hiroki Okada.
           </CVEntry>
-          <CVEntry from={2021} to={2022}>
-            M.Sc. in Mathematics and Foundations of Computer Science at Oxford University, UK. Final Grade: Distinction.
-          </CVEntry>
-          <CVEntry from={2020} to={2021}>
-            M.Sc. in Computational Mathematics at University of Passau, Germany. Discontinued because of above offer from Oxford; Preliminary Grade 1.0.
-          </CVEntry>
-          <CVEntry from={2018} to={2020}>
-            B.Sc. in Mathematics at University of Passau, Germany. Final Grade: 1.0.
-          </CVEntry>
-          <CVEntry from={2017} to={2020}>
-            B.Sc. in Computer Science at University of Passau, Germany. Final Grade: 1.0.
-          </CVEntry>
-          <CVEntry from={2017} to={2019}>
-            Working student at msg systems, Passau, Germany.
+          <CVEntry from={2023} to={2025} detailedDate="09/2023 - 12/2025">
+            Teaching Assistant for Applications of Cryptography. This includes marking coursework, supervising the Lab sessions and holding a guest lecture.
           </CVEntry>
         </ListTable>
 
