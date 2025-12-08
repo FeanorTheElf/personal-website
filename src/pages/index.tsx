@@ -119,7 +119,7 @@ export default function Home() {
           <CVEntry from={2025} detailedDate="01/04 - 28/06">
             Invited Researcher hosted by KDDI Research, supported by the International Exchange Program of the National Institute of Information and Communications (NICT). The primary contact was Hiroki Okada.
           </CVEntry>
-          <CVEntry from={2023} to={2025} detailedDate="09/2023 - 12/2025">
+          <CVEntry from={2023} to={2025}>
             Teaching Assistant for Applications of Cryptography. This includes marking coursework, supervising the Lab sessions and holding a guest lecture.
           </CVEntry>
         </ListTable>
