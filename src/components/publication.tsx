@@ -27,7 +27,7 @@ function isSorted(str: string): boolean {
     return true;
 }
 
-const datePattern = new RegExp("(?:\(([0-9]{4})\))|(?: ([0-9]{4}), )|(?:\. ([0-9]{4})\.)");
+const datePattern = new RegExp("(?:\\(([0-9]{4})\\))|(?: ([0-9]{4}), )|(?:\\. ([0-9]{4})\\.)");
 const shorthandPattern = new RegExp("([A-Z]+)([0-9]{2})");
 
 export type PublicationProps = PropsWithChildren<{shorthand: string, link?: string, linkdesc?: string}>;
@@ -70,7 +70,7 @@ export default function Publication(props: PublicationProps) {
         </tr>);
     } else {
         return (<tr>
-            <td className="table-list-header"><b>{props.shorthand}</b><br/><a href={props.link}>{publicationDescription(props.link, props.linkdesc)}</a></td>
+            <td className="table-list-header"><b>{props.shorthand}</b><br/><a className="link-desc" href={props.link}>{publicationDescription(props.link, props.linkdesc)}</a></td>
             <td className="table-list-content">{props.children}</td>
         </tr>);
     }

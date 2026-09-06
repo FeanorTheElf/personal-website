@@ -15,13 +15,13 @@ export function getCVEntryDate(props: CVEntryProps): number {
 export default function CVEntry(props: CVEntryProps) {
     let dateMain = undefined;
     if (props.to != undefined) {
-        dateMain = (<b>{props.from.toString() + " - " + props.to.toString()}</b>);
+        dateMain = (<b className="cv-date">{props.from.toString() + " - " + props.to.toString()}</b>);
     } else {
-        dateMain = (<b>{props.from.toString()}</b>);
+        dateMain = (<b className="cv-date">{props.from.toString()}</b>);
     }
     if (props.detailedDate != undefined) {
         return (<tr>
-            <td className="table-list-header">{dateMain}<br/><i>{props.detailedDate}</i></td>
+            <td className="table-list-header">{dateMain}<br/><i className="detailed-date">{props.detailedDate}</i></td>
             <td className="table-list-content">{props.children}</td>
         </tr>);
     } else {

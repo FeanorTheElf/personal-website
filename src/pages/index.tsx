@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <Navbar/>
       <MainCol>
-        <h3 id="top">Simon Pohmann</h3>
+        <h1 id="top">Simon Pohmann</h1>
         
         <ListTable>
           <tr>
@@ -27,6 +27,16 @@ export default function Home() {
             <th scope="row" className="table-list-header">Current Affiliation</th>
             <td className="table-list-content">Royal Holloway, University of London</td>
           </tr>
+          <tr>
+            <th scope="row" className="table-list-header">Links</th>
+            <td className="table-list-content">
+              <a href="https://orcid.org/0009-0009-7310-7865">ORCID</a>
+              {" · "}
+              <a href="https://github.com/FeanorTheElf">GitHub</a>
+              {" · "}
+              <a href="https://dblp.org/pid/290/4899">DBLP</a>
+            </td>
+          </tr>
         </ListTable>
 
         <div className="container-fluid py-4">
@@ -36,7 +46,7 @@ export default function Home() {
             </div>
             <div className="col-1 d-xxxl"/>
             <div className="col-12 col-lg-8 col-xxl-6 col-xxxl-4 col-xxxxl-3">
-              I'm Simon Pohmann, and I am currently a PhD in Cryptography student at Royal Holloway.
+              I'm Simon Pohmann, and I will be joining KU Leuven as a postdoctoral researcher in November.
               I have a background in Mathematics, and my current research is on both theoretical and implementation aspects of lattice-based cryptography, in particular Fully Homomorphic Encryption (FHE).
               I'm the author of the <a href="https://crates.io/crates/feanor-math">feanor-math</a> and <a href="https://crates.io/crates/fheanor">fheanor</a> Rust libraries for computational mathematics and FHE, respectively.
               On the theoretical side, I am investigating efficient polynomial evaluation in the context of FHE, and in particular Doubly-Efficient Private Information Retrieval.
@@ -44,22 +54,29 @@ export default function Home() {
           </div>
         </div>
 
-        <h3 id="publications">Publications</h3>
+        <h2 id="publications">Publications</h2>
         <i>Authors are ordered alphabetically.</i>
+
         <ListTable>
+          <Publication shorthand="NPVW27" link="https://ia.cr/2026/1872">
+            L. Nürnberger, S. Pohmann, M. Veroni, C. Weinert. “DNSPIR: Private Information Retrieval Optimized for Privacy-Preserving DNS Lookups”. In: Proceedings on Privacy Enhancing Technologies (PoPETS'27). 2027.
+          </Publication>
+          <Publication shorthand="P26" linkdesc="royalholloway.ac.uk" link="https://pure.royalholloway.ac.uk/ws/portalfiles/portal/75020487/thesis.pdf">
+            S. Pohmann. “An Algebraic Perspective on the BGV and BFV Homomorphic Encryption Schemes”. Doctoral Thesis. Royal Holloway, University of London. 2026.
+          </Publication>
           <Publication shorthand="OPP25" link="https://ia.cr/2025/864">
             H. Okada, R. Player, and S. Pohmann. “Fheanor: a new, modular FHE library for designing and optimising schemes”. In: Cryptology ePrint Archive (2025).
           </Publication>
           <Publication shorthand="OPPW25" link="https://ia.cr/2024/1307">
-            H. Okada, R. Player, S. Pohmann, and C. Weinert. “On algebraic homomorphic encryption and its applications to doubly-efficient PIR”. In: Annual International Conference on the Theory and Applications of Cryptographic Techniques. Springer. 2025, pp. 34-64.
+            H. Okada, R. Player, S. Pohmann, and C. Weinert. “On algebraic homomorphic encryption and its applications to doubly-efficient PIR”. In: Annual International Conference on the Theory and Applications of Cryptographic Techniques (EUROCRYPT'25). Springer. 2025, pp. 34-64.
           </Publication>
           <Publication shorthand="OPPW24" link="https://ia.cr/2023/1510">
-            H. Okada, R. Player, S. Pohmann, and C. Weinert. “Towards practical doubly-efficient private information retrieval”. In: International Conference on Financial Cryptography and Data Security. Springer. 2024, pp. 264-282.
+            H. Okada, R. Player, S. Pohmann, and C. Weinert. “Towards practical doubly-efficient private information retrieval”. In: International Conference on Financial Cryptography and Data Security (FC'24). Springer. 2024, pp. 264-282.
           </Publication>
           <Publication shorthand="OPP23" link="https://ia.cr/2023/1304">
-            H. Okada, R. Player, and S. Pohmann. “Homomorphic polynomial evaluation using Galois structure and applications to BFV bootstrapping”. In: International Conference on the Theory and Application of Cryptology and Information Security. Springer. 2023, pp. 69-100.
+            H. Okada, R. Player, and S. Pohmann. “Homomorphic polynomial evaluation using Galois structure and applications to BFV bootstrapping”. In: International Conference on the Theory and Application of Cryptology and Information Security (ASIACRYPT'23). Springer. 2023, pp. 69-100.
           </Publication>
-          <Publication shorthand="P22" link="www.maths.ox.ac.uk/system/files/inline-files/S%20Pohmann%2021-22.pdf" linkdesc="ox.ac.uk">
+          <Publication shorthand="P22" linkdesc="ox.ac.uk" link="https://www.maths.ox.ac.uk/system/files/inline-files/S%20Pohmann%2021-22.pdf">
             S. Pohmann. “Generating supersingular curves with modular polynomials”. MA thesis. Oxford University. 2022.
           </Publication>
           <Publication shorthand="PSZ21" link="https://ia.cr/2021/430">
@@ -67,11 +84,25 @@ export default function Home() {
           </Publication>
         </ListTable>
 
-        <h3 id="experience">Education</h3>
+        <h2 id="positions">Positions Held</h2>
 
         <ListTable>
-          <CVEntry from={2022} to="now">
-            PhD in the Information Security Group at Royal Holloway, University of London. Supervised by <a href="https://rachelplayer.github.io/">Dr Rachel Player</a>.
+          <CVEntry from={2026} detailedDate="01/11 - now">
+            FWO Junior Postdoctoral Fellow at COSIC, KU Leuven.
+          </CVEntry>
+          <CVEntry from={2026} detailedDate="23/02 - 31/10">
+            Part-time cryptographic researcher at <a href="https://www.fhenix.io/">Fhenix</a>.
+          </CVEntry>
+          <CVEntry from={2017} to={2019}>
+            Working student at msg systems, Passau, Germany.
+          </CVEntry>
+        </ListTable>
+
+        <h2 id="education">Education</h2>
+
+        <ListTable>
+          <CVEntry from={2022} to={2026}>
+            PhD in Cryptography as part of the Information Security Group at Royal Holloway, University of London. Supervised by <a href="https://rachelplayer.github.io/">Dr Rachel Player</a>, and advised by <a href="https://sites.google.com/view/hirokiokada">Hiroki Okada</a> and <a href="https://orcid.org/0000-0003-4906-6871">Dr Christian Weinert</a>.
           </CVEntry>
           <CVEntry from={2021} to={2022}>
             M.Sc. in Mathematics and Foundations of Computer Science at Oxford University, UK. Final Grade: Distinction.
@@ -85,18 +116,18 @@ export default function Home() {
           <CVEntry from={2017} to={2020}>
             B.Sc. in Computer Science at University of Passau, Germany. Final Grade: 1.0.
           </CVEntry>
-          <CVEntry from={2017} to={2019}>
-            Working student at msg systems, Passau, Germany.
-          </CVEntry>
         </ListTable>
 
-        <h3 id="talks">Talks and Posters</h3>
+        <h2 id="talks">Talks and Posters</h2>
 
         <ListTable>
+          <Publication shorthand="08/03/2026" linkdesc="on github" link="https://raw.githubusercontent.com/FeanorTheElf/fheanor-poster/refs/heads/master/poster.pdf">
+            “Fheanor: a new, modular FHE library for designing and optimising schemes”. Poster Presentation at FHE.org 2026.
+          </Publication>
           <Publication shorthand="12/08/2025" link="https://youtu.be/W7V042x0IC0?si=lHxTP2kLaf38dGx3">
             “An introduction to the FHE library Fheanor”. COSIC Seminar at KU Leuven.
           </Publication>
-          <Publication shorthand="25/03/2025" link="https://github.com/user-attachments/files/19668501/poster-1.pdf">
+          <Publication shorthand="25/03/2025" linkdesc="on github" link="https://raw.githubusercontent.com/FeanorTheElf/ashe-poster/refs/heads/master/poster.pdf">
             “On algebraic homomorphic encryption and its applications to doubly-efficient PIR”. Poster Presentation at FHE.org 2025.
           </Publication>
           <Publication shorthand="06/03/2024" link="https://youtu.be/g6IoMCFNx6U?si=Q56NnrkFrbThBD0D">
@@ -110,7 +141,7 @@ export default function Home() {
           </Publication>
         </ListTable>
 
-        <h3 id="experience">Other Research Experience</h3>
+        <h2 id="experience">Other Experience</h2>
 
         <ListTable>
           <CVEntry from={2025} detailedDate="28/07 - 01/08">

@@ -6,7 +6,7 @@ function nextConfig(phase: any): NextConfig {
   return {
     output: 'export',
     reactStrictMode: true,
-    assetPrefix: isDev ? undefined : "https://feanortheelf.github.io/personal-website/"
+    assetPrefix: isDev ? undefined : "."
   };
 }
 

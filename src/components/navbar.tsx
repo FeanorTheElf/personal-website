@@ -14,6 +14,12 @@ export default function Navbar() {
                 <a className="nav-link" href="#publications">Publications</a>
                 </li>
                 <li className="nav-item">
+                <a className="nav-link" href="#positions">Positions</a>
+                </li>
+                <li className="nav-item">
+                <a className="nav-link" href="#education">Education</a>
+                </li>
+                <li className="nav-item">
                 <a className="nav-link" href="#talks">Talks</a>
                 </li>
                 <li className="nav-item">
